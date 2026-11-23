@@ -1,0 +1,12 @@
+# Pinned from the Python 3.12 environment this project was built and verified with.
+duckdb==2.0.1
+ipykernel==7.4.0
+ipython==9.19.1
+matplotlib==3.11.2
+nbconvert==7.17.2
+numpy==2.5.5
+openpyxl==3.1.5
+pandas==3.1.1
+pyarrow==26.0.1
+requests==2.34.2
+XlsxWriter==3.3.4

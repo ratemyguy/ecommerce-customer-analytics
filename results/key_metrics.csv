@@ -1,0 +1,98 @@
+metric,value,unit,source,how
+raw_lines,1067371,lines,data_quality.csv,step 0
+clean_sales_lines,1001912,lines,data_quality.csv,clean step
+clean_pct_of_raw_lines,93.87,%,data_quality.csv,clean step
+duplicate_lines_removed,34335,lines,data_quality.csv,sum of the two exact-duplicate steps
+voided_sale_lines,1331,lines,data_quality.csv,void step
+voided_sale_value_gbp,393101.24,GBP,data_quality.csv,void step
+two_largest_voids_value_gbp,245653.2,GBP,voided_sales_lines.csv,sum of the 2 largest voided lines
+no_customer_id_lines_pct_of_clean,22.63,%,data_quality.csv,no-ID lines / clean lines
+revenue_total_gbp,19249345.05,GBP,monthly_kpis.csv,sum of revenue_gbp
+orders_total,39395,orders,monthly_kpis.csv,sum of orders
+avg_order_value_gbp,488.62,GBP,monthly_kpis.csv,revenue / orders
+no_customer_id_revenue_pct,13.38,%,monthly_kpis.csv,no-ID revenue / revenue
+november_no_customer_id_revenue_pct,20.56,%,monthly_kpis.csv,Nov 2010 + Nov 2011 no-ID revenue / their revenue
+revenue_jan_nov_2010_gbp,8539805.77,GBP,monthly_kpis.csv,Jan-Nov 2010
+revenue_jan_nov_2011_gbp,8697047.34,GBP,monthly_kpis.csv,Jan-Nov 2011
+revenue_growth_jan_nov_pct,1.84,%,monthly_kpis.csv,Jan-Nov 2011 vs Jan-Nov 2010
+revenue_dec2010_nov2011_gbp,9469168.69,GBP,monthly_kpis.csv,last 12 full months
+sep_nov_share_of_12_months_pct,37.55,%,monthly_kpis.csv,Sep-Nov 2011 / Dec 2010-Nov 2011
+peak_month,Nov 2011,,monthly_kpis.csv,highest full month
+peak_month_revenue_gbp,1441880.43,GBP,monthly_kpis.csv,highest full month
+nov_2010_revenue_gbp,1424554.53,GBP,monthly_kpis.csv,
+lowest_month,Feb 2011,,monthly_kpis.csv,lowest full month
+lowest_month_revenue_gbp,507591.22,GBP,monthly_kpis.csv,lowest full month
+peak_to_lowest_ratio,2.84,x,monthly_kpis.csv,peak / lowest full month
+returning_share_of_identified_revenue_2011_pct,91.31,%,monthly_kpis.csv,2011 returning-customer revenue / identified revenue
+product_cancellation_rate_pct,1.88,%,monthly_kpis.csv,cancelled product value / product revenue (same-day voids excluded)
+customers_identified,5851,customers,rfm_customers.csv,rows
+repeat_customers_pct,72.28,%,rfm_customers.csv,customers with 2+ orders / customers
+repeat_customers_revenue_pct,96.66,%,rfm_customers.csv,their share of identified revenue
+single_order_customers_pct,27.72,%,rfm_customers.csv,
+single_order_customers_revenue_pct,3.34,%,rfm_customers.csv,
+top_1pct_customers,59,customers,rfm_customers.csv,ceil(1% of customers)
+top_1pct_customers_revenue_pct,31.24,%,rfm_customers.csv,
+top_10_customers_revenue_pct,16.11,%,rfm_customers.csv,
+retention_month_1_pct,20.89,%,retention_curve.csv,pooled over cohorts Jan 2010+ fully observed at that month
+retention_month_3_pct,21.12,%,retention_curve.csv,pooled over cohorts Jan 2010+ fully observed at that month
+retention_month_6_pct,18.48,%,retention_curve.csv,pooled over cohorts Jan 2010+ fully observed at that month
+retention_month_10_pct,13.4,%,retention_curve.csv,pooled over cohorts Jan 2010+ fully observed at that month
+retention_month_11_pct,13.98,%,retention_curve.csv,pooled over cohorts Jan 2010+ fully observed at that month
+retention_month_12_pct,18.42,%,retention_curve.csv,pooled over cohorts Jan 2010+ fully observed at that month
+dec2009_cohort_month_1_pct,34.91,%,cohort_retention.csv,"first cohort, month 1"
+new_customers_with_1y_followup,3331,customers,repeat_purchase_timing.csv,first purchase Jan 2010 - 9 Dec 2010
+reordered_within_30d_pct,15.97,%,repeat_purchase_timing.csv,
+reordered_within_60d_pct,30.71,%,repeat_purchase_timing.csv,
+reordered_within_90d_pct,40.56,%,repeat_purchase_timing.csv,
+reordered_within_180d_pct,57.13,%,repeat_purchase_timing.csv,
+reordered_within_365d_pct,69.74,%,repeat_purchase_timing.csv,
+median_days_to_second_order_returners,72,days,repeat_purchase_timing.csv,first day by which half of the 365-day returners had come back
+first_year_value_median_gbp,711.81,GBP,first_year_value.csv,
+first_year_value_mean_gbp,1480.96,GBP,first_year_value.csv,
+first_year_revenue_after_first_day_pct,71.35,%,first_year_value.csv,
+seg_champions_customers,1244,customers,rfm_segments.csv,
+seg_champions_customers_pct,21.26,%,rfm_segments.csv,
+seg_champions_revenue_pct,68.55,%,rfm_segments.csv,
+seg_cant_lose_customers,207,customers,rfm_segments.csv,
+seg_cant_lose_customers_pct,3.54,%,rfm_segments.csv,
+seg_cant_lose_revenue_pct,5.25,%,rfm_segments.csv,
+seg_at_risk_customers,503,customers,rfm_segments.csv,
+seg_at_risk_customers_pct,8.6,%,rfm_segments.csv,
+seg_at_risk_revenue_pct,3.31,%,rfm_segments.csv,
+seg_loyal_customers,1330,customers,rfm_segments.csv,
+seg_loyal_customers_pct,22.73,%,rfm_segments.csv,
+seg_loyal_revenue_pct,15.69,%,rfm_segments.csv,
+seg_potential_loyalists_customers,270,customers,rfm_segments.csv,
+seg_potential_loyalists_customers_pct,4.61,%,rfm_segments.csv,
+seg_potential_loyalists_revenue_pct,1.16,%,rfm_segments.csv,
+seg_new_customers,236,customers,rfm_segments.csv,
+seg_new_customers_pct,4.03,%,rfm_segments.csv,
+seg_new_revenue_pct,0.47,%,rfm_segments.csv,
+seg_hibernating_customers,1101,customers,rfm_segments.csv,
+seg_hibernating_customers_pct,18.82,%,rfm_segments.csv,
+seg_hibernating_revenue_pct,3.14,%,rfm_segments.csv,
+seg_lost_customers,960,customers,rfm_segments.csv,
+seg_lost_customers_pct,16.41,%,rfm_segments.csv,
+seg_lost_revenue_pct,2.42,%,rfm_segments.csv,
+seg_champions_loyal_customers,2574,customers,rfm_segments.csv,sum
+seg_champions_loyal_customers_pct,43.99,%,rfm_segments.csv,sum
+seg_champions_loyal_revenue_gbp,14046442.99,GBP,rfm_segments.csv,sum
+seg_champions_loyal_revenue_pct,84.24,%,rfm_segments.csv,sum
+seg_cant_lose_at_risk_customers,710,customers,rfm_segments.csv,sum
+seg_cant_lose_at_risk_customers_pct,12.14,%,rfm_segments.csv,sum
+seg_cant_lose_at_risk_revenue_gbp,1427677.84,GBP,rfm_segments.csv,sum
+seg_cant_lose_at_risk_revenue_pct,8.56,%,rfm_segments.csv,sum
+seg_hibernating_lost_customers,2061,customers,rfm_segments.csv,sum
+seg_hibernating_lost_customers_pct,35.23,%,rfm_segments.csv,sum
+seg_hibernating_lost_revenue_gbp,927412.97,GBP,rfm_segments.csv,sum
+seg_hibernating_lost_revenue_pct,5.56,%,rfm_segments.csv,sum
+products,4715,products,product_pareto.csv,
+top_20pct_products_revenue_pct,77.7293,%,pareto_summary.csv,
+products_for_half_of_revenue,292,products,pareto_summary.csv,
+products_for_half_of_revenue_pct,6.19,%,pareto_summary.csv,
+bottom_50pct_products_revenue_pct,4.66,%,pareto_summary.csv,100 - top 50% share
+countries,43,countries,country_revenue.csv,incl. 'Unspecified'
+uk_revenue_pct,85.3,%,country_revenue.csv,
+top_2_export_markets,EIRE & Netherlands,,country_revenue.csv,by revenue
+top_2_export_markets_pct_of_non_uk,41.15,%,country_revenue.csv,
+top_2_export_markets_customers,25,customers,country_revenue.csv,

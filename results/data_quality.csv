@@ -1,0 +1,12 @@
+step,rule,action,rows_affected,pct_of_raw_lines,value_gbp,note
+0,Raw transaction lines (both sheets),start,1067371,100.0,19287250.57,"Year 2009-2010: 525,461 + Year 2010-2011: 541,910; 2009-12-01 07:45 to 2011-12-09 12:50"
+1,Exact duplicate: sheet 2 repeats the last days of sheet 1,removed,22523,2.11,377488.45,"2010-12-01 to 2010-12-09 is in both sheets, identical line for line"
+2,Exact duplicate: line repeated within the same sheet,removed,11812,1.11,54228.42,
+3,"Cancellation lines (Invoice starts with ""C"")",set aside for the cancellation-rate metric,19104,1.79,-1462050.61,
+4,"Quantity <= 0 or price <= 0 (stock write-offs, zero-price lines, bad-debt adjustments)",removed,6019,0.56,-158676.14,
+5,"Non-product stock codes (postage, carriage, manual, discounts, samples, fees, vouchers, tests)",removed,4670,0.44,833814.16,list in results/non_product_codes.csv
+6,Sale lines voided within 24 h by the same customer (identical cancellation line or a manual credit for exactly that amount) - keying errors,removed; their cancellation lines are excluded from the cancellation rate,1331,0.12,393101.24,"1,330 identical cancellation lines + 1 manual credit(s) flagged"
+7,Clean product sales lines,kept,1001912,93.87,19249345.05,"39,395 invoices, 4,715 products"
+8,...of which: no Customer ID,kept for revenue totals; excluded from customer analysis,226760,21.24,2575195.57,13.4% of clean revenue
+9,Unit price more than 10x the product's median price (possible mis-keyed prices),"kept, flagged only",758,0.07,16078.38,0.08% of clean revenue; 756 of these lines have no Customer ID
+10,Stock code upper-cased or trimmed (e.g. '85123a' -> '85123A'),"normalised, not removed",3346,0.31,,counted on de-duplicated lines

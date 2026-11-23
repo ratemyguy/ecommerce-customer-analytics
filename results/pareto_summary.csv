@@ -1,0 +1,8 @@
+measure,products,pct_of_products,pct_of_revenue
+top 1% of products,48,1.02,18.4182
+top 5% of products,236,5.01,45.2697
+top 10% of products,472,10.01,61.372
+top 20% of products,943,20.0,77.7293
+top 50% of products,2358,50.01,95.3374
+products needed for 50% of revenue,292,6.19,50.0
+products needed for 80% of revenue,1043,22.12,80.0

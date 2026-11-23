@@ -1,0 +1,43 @@
+stock_code,decision,reason,example_description,sales_lines,sales_value_gbp
+POST,excluded (not a product),Postage charge,POSTAGE,1851,125682.42
+DOT,excluded (not a product),Dotcom (web order) postage charge,DOTCOM POSTAGE,1415,309854.11
+M,excluded (not a product),Manual adjustment,Manual,851,339241.29
+C2,excluded (not a product),Carriage charge,CARRIAGE,267,13426.0
+23444,excluded (not a product),Next Day Carriage (delivery fee on a product-style code),Next Day Carriage,79,1200.0
+ADJUST,excluded (not a product),Manual stock/price adjustment,Adjustment by john on 26/01/2010 16,36,8897.93
+BANK CHARGES,excluded (not a product),Bank charges,Bank Charges,34,519.24
+GIFT_0001_20,excluded (not a product),Gift voucher,Dotcomgiftshop Gift Voucher £20.00,26,471.06
+GIFT_0001_30,excluded (not a product),Gift voucher,Dotcomgiftshop Gift Voucher £30.00,24,610.09
+PADS,excluded (not a product),Placeholder line priced at 0.001 GBP,PADS TO MATCH ALL CUSHIONS,17,0.02
+23574,excluded (not a product),Packing charge (fee on a product-style code),PACKING CHARGE,14,105.0
+GIFT_0001_10,excluded (not a product),Gift voucher,Dotcomgiftshop Gift Voucher £10.00,14,126.21
+TEST001,excluded (not a product),Test product,This is a test product.,9,225.0
+GIFT_0001_50,excluded (not a product),Gift voucher,Dotcomgiftshop Gift Voucher £50.00,6,253.59
+D,excluded (not a product),Discount,Discount,5,397.89
+GIFT_0001_40,excluded (not a product),Gift voucher,Dotcomgiftshop Gift Voucher £40.00,5,166.09
+23702,excluded (not a product),High-resolution image (not merchandise),High Resolution Image,3,27.0
+ADJUST2,excluded (not a product),Manual stock/price adjustment,Adjustment by Peter on Jun 25 2010,3,731.05
+AMAZONFEE,excluded (not a product),Amazon marketplace fee,AMAZON FEE,3,20467.8
+S,excluded (not a product),Samples,SAMPLES,3,136.85
+22016,excluded (not a product),Gift voucher on a product-style code,Dotcomgiftshop Gift Voucher £100.00,1,83.33
+B,excluded (not a product),Adjust bad debt,Adjust bad debt,1,11062.06
+GIFT_0001_70,excluded (not a product),Gift voucher,Dotcomgiftshop Gift Voucher £70.00,1,59.57
+GIFT_0001_80,excluded (not a product),Gift voucher,Dotcomgiftshop Gift Voucher £80.00,1,69.56
+TEST002,excluded (not a product),Test product,This is a test product.,1,1.0
+DCGS0058,kept (product),Online (dotcom) product listing or other non-standard product code,MISO PRETTY GUM,30,34.82
+DCGSSGIRL,kept (product),Online (dotcom) product listing or other non-standard product code,GIRLS PARTY BAG,23,295.63
+DCGSSBOY,kept (product),Online (dotcom) product listing or other non-standard product code,BOYS PARTY BAG,21,251.35
+DCGS0076,kept (product),Online (dotcom) product listing or other non-standard product code,SUNJAR LED NIGHT NIGHT LIGHT,14,275.96
+DCGS0003,kept (product),Online (dotcom) product listing or other non-standard product code,BOXED GLASS ASHTRAY,13,32.59
+DCGS0069,kept (product),Online (dotcom) product listing or other non-standard product code,OOH LA LA DOGS COLLAR,5,80.31
+DCGS0004,kept (product),Online (dotcom) product listing or other non-standard product code,HAYNES CAMPER SHOULDER BAG,4,67.94
+DCGS0072,kept (product),Online (dotcom) product listing or other non-standard product code,CAT CAMOUFLAGUE COLLAR,3,20.68
+DCGS0066N,kept (product),Online (dotcom) product listing or other non-standard product code,NAVY CUDDLES DOG HOODIE,2,17.3
+DCGS0068,kept (product),Online (dotcom) product listing or other non-standard product code,DOGS NIGHT COLLAR,2,17.12
+DCGS0070,kept (product),Online (dotcom) product listing or other non-standard product code,CAMOUFLAGE DOG COLLAR,2,25.44
+SP1002,kept (product),Online (dotcom) product listing or other non-standard product code,KID'S CHALKBOARD/EASEL,2,14.75
+DCGS0037,kept (product),Online (dotcom) product listing or other non-standard product code,KEY-RING CORKSCREW,1,12.72
+DCGS0041,kept (product),Online (dotcom) product listing or other non-standard product code,HAYNES MINI-COOPER PLAYING CARDS,1,5.06
+DCGS0044,kept (product),Online (dotcom) product listing or other non-standard product code,HANDZ-OFF CAR FRESHENER,1,2.57
+DCGS0062,kept (product),Online (dotcom) product listing or other non-standard product code,ROAD-RAGE CAR FRESHENER,1,2.51
+DCGS0075,kept (product),Online (dotcom) product listing or other non-standard product code,CAMOUFLAGUE DOG LEAD,1,12.72

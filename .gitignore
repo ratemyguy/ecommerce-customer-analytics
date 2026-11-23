@@ -1,0 +1,13 @@
+# Raw download (src/run_all.py downloads it again; about 45 MB zipped)
+data/raw/
+
+# Python and Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# OS and temporary files
+.DS_Store
+*.tmp
+*.part
